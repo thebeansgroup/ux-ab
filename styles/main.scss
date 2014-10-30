@@ -6,21 +6,27 @@ body, html {
  margin: 0;
  padding: 0;
  font-size: 16px;
+ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 //Question
 
 .question {
   margin: 0;
-  padding: 0.5em ;
+  padding: 1.8em ;
   background-color: #ddd;
 }
 
+.sub{
+  font-weight:300;
+  font-size:20px
+}
 
 // Answer row
 
 .answers {
   *zoom: 1;
+  margin-top:100px
 }
 
 .answers:before, .answers:after {
