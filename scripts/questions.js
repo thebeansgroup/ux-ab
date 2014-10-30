@@ -1,18 +1,18 @@
 module.exports = [
   {
-    question: "What is this thing?",
+    question: "Which offer would you be more likely to click?",
     answers: [
       {
-        name: "Answer 1",
-        image: "http://cdn.ymaservices.com/editorial_service/bases/images/000/007/088/large/2590097881_441c262dda.jpg?1414507300"
+        name: "Lifestyle",
+        image: "/dist/images/1/test-discounts_01.png"
       },
       {
-        name: "Answer 2",
-        image: "http://cdn.ymaservices.com/editorial_service/bases/images/000/007/107/xlarge/miley.jpg?1414604562"
+        name: "Standard offer box",
+        image: "/dist/images/1/test-discounts_02.png"
       },
       {
-        name: "Answer 3",
-        image: "http://cdn.ymaservices.com/editorial_service/bases/images/000/007/088/large/2590097881_441c262dda.jpg?1414507300"
+        name: "iD Box",
+        image: "/dist/images/1/test-discounts_03.png"
       }
     ]
   },

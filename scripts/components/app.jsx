@@ -119,7 +119,7 @@ var React = require('react'),
         return (
           <div>
             <h1 className="question">
-              <div>Imagine you're looking for a discount</div>
+              <div className="sub">Imagine you're looking for a discount</div>
               <div>{current_question.question}</div>
             </h1>
             <Answers answers={current_question.answers} onAnswer={this.onAnswer} />
