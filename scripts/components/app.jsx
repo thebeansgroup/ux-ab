@@ -118,7 +118,10 @@ var React = require('react'),
         this.displayResults();
         return (
           <div>
-            <h1 className="question">{current_question.question}</h1>
+            <h1 className="question">
+              <div>Imagine you're looking for a discount</div>
+              <div>{current_question.question}</div>
+            </h1>
             <Answers answers={current_question.answers} onAnswer={this.onAnswer} />
           </div>
         )
