@@ -1,3 +1,63 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
+
+body, html {
+ margin: 0;
+ padding: 0;
+ font-size: 16px;
+}
+
+//Question
+
+.question {
+  margin: 0;
+  padding: 0.5em ;
+  background-color: #ddd;
+}
+
+
+// Answer row
+
+.answers {
+  *zoom: 1;
+}
+
+.answers:before, .answers:after {
+  content: "";
+  display: table;
+}
+
+.answers:after {
+  clear: both;
+}
+
+
+// Answer column
+
+.answer {
+  padding: 0 5px;
+  float: left;
+  width: 33%;
+}
+
+.answer + .answer:last-child {
+  float: right;
+}
+
+
+// IMages
+
+img {
+  max-width: 100%;
+  cursor: pointer;
+
+  &:hover {
+    $scale: 1.02;
+    -webkit-transform: scale($scale);
+    -moz-transform: scale($scale);
+    -o-transform: scale($scale);
+    -ms-transform: scale($scale);
+    transform: scale($scale);
+  }
+}

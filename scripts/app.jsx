@@ -5,6 +5,6 @@
 var React = require('react');
 window.React = React;
 
-var MyComponent = require('./components/mycomponent.jsx');
+var App = require('./components/app.jsx');
 
-React.renderComponent(<MyComponent />, document.getElementById('content'));
+React.renderComponent(<App />, document.getElementById('content'));
