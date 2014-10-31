@@ -112,14 +112,30 @@ var React = require('react'),
       /** 
        * Rendering
        */
+      
+      animateRefresh: function(time) {
+        setTimeout( function(){ 
+          var wrap = document.getElementsByClassName('wrap')[0]; 
+          wrap.className = wrap.className + " doit"; 
+        }, time);
+      },
+  
+      headerBackground: function(){
+        var colors = ["#00FFCF", "#9EEAED", "#9EEDA2", "#FAF978"];
+        return {
+          "background-color": colors[this.state.question % colors.length]
+        };
+      },
 
       render: function() {
         var current_question = this.props.questions[this.state.question];
         this.displayResults();
+        this.animateRefresh(250);
         return (
-          <div>
-            <h1 className="question">
-              <div className="sub">Imagine you're looking for a discount</div>
+          <div className={"wrap " + this.state.question} >
+            <div className="progress">{this.state.question+1} of {this.props.questions.length}</div> 
+            <h1 className="question" style={this.headerBackground()}>
+              <div className="question__sub">Imagine you're looking for a discount</div>
               <div>{current_question.question}</div>
             </h1>
             <Answers answers={current_question.answers} onAnswer={this.onAnswer} />
