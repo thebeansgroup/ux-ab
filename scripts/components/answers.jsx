@@ -24,12 +24,20 @@ var React = require('react'),
         return o;
       },
 
+      setSize: function() {
+        var width = 100 / this.props.answers.length;
+        return {
+          width: width + "%"
+        };
+      },
+
       images: function() {
-        var answer, _i, _len, _ref, imgs = [];
+        var answer, _i, _len, _ref, imgs = [], size;
+        size = this.setSize();
         _ref = this.shuffled_answers();
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
             answer = _ref[_i];
-            imgs.push(<div className="answer"><img src={answer.image} data-answer={answer.name}  onClick={this.onAnswerClick} /></div>);
+            imgs.push(<div className="answer" style={size}><img src={answer.image} data-answer={answer.name}  onClick={this.onAnswerClick} /></div>);
         }
         return imgs;
       },
