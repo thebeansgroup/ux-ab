@@ -4,15 +4,15 @@ module.exports = [
     answers: [
       {
         name: "Lifestyle",
-        image: "/dist/images/1/test-discounts_01.png"
+        image: "/images/1/test-discounts_01.png"
       },
       {
         name: "Standard offer box",
-        image: "/dist/images/1/test-discounts_02.png"
+        image: "/images/1/test-discounts_02.png"
       },
       {
         name: "iD Box",
-        image: "/dist/images/1/test-discounts_03.png"
+        image: "/images/1/test-discounts_03.png"
       }
     ]
   },
@@ -21,15 +21,15 @@ module.exports = [
     answers: [
       {
         name: "Lifestyle",
-        image: "/dist/images/1/test-discounts_01.png"
+        image: "/images/1/test-discounts_01.png"
       },
       {
         name: "Standard offer box",
-        image: "/dist/images/1/test-discounts_02.png"
+        image: "/images/1/test-discounts_02.png"
       },
       {
         name: "iD Box",
-        image: "/dist/images/1/test-discounts_03.png"
+        image: "/images/1/test-discounts_03.png"
       }
     ]
   },
@@ -38,15 +38,15 @@ module.exports = [
     answers: [
       {
         name: "Lifestyle",
-        image: "/dist/images/3/test-discounts_2__01.png"
+        image: "/images/3/test-discounts_2__01.png"
       },
       {
         name: "Standard offer box",
-        image: "/dist/images/3/test-discounts_2__02.png"
+        image: "/images/3/test-discounts_2__02.png"
       },
       {
         name: "iD Box",
-        image: "/dist/images/3/test-discounts_2__03.png"
+        image: "/images/3/test-discounts_2__03.png"
       }
     ]
   },
@@ -55,15 +55,15 @@ module.exports = [
     answers: [
       {
         name: "Lifestyle",
-        image: "/dist/images/4/layout-tests-01.png"
+        image: "/images/4/layout-tests-01.png"
       },
       {
         name: "Standard offer box",
-        image: "/dist/images/4/layout-tests-02.png"
+        image: "/images/4/layout-tests-02.png"
       },
       {
         name: "iD Box",
-        image: "/dist/images/4/layout-tests-03.png"
+        image: "/images/4/layout-tests-03.png"
       }
     ]
   },
